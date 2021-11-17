@@ -114,6 +114,13 @@ function App() {
           </ContentComplete>
         )}
       </Card>
+      <footer>
+        Created by{" "}
+        <a href="https://github.com/robertfrontend" target="_blank">
+          robertfrontend
+        </a>{" "}
+        - devChallenges.io
+      </footer>
     </AppComponent>
   );
 }
@@ -121,12 +128,31 @@ function App() {
 const AppComponent = styled.div`
   width: 100%;
   min-height: 120vh;
+  position: relative;
   background: #acacac45;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: rgba(79, 79, 79, 1);
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    color: #a9a9a9;
+    text-align: center;
+    a {
+      text-decoration: none;
+      color: #8a8a8a;
+    }
+  }
 `;
 
 const Card = styled.div`
